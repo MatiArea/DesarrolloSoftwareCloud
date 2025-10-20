@@ -1,0 +1,15 @@
+{
+    "StartAt": "ValidarPago",
+    "States": {
+        "ValidarPago": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:...:ValidarPago",
+            "Next": "EnviarNotificacion"
+        },
+        "EnviarNotificacion": {
+            "Type": "Task",
+            "Resource": "arn:aws:lambda:...:EnviarNotificacion",
+            "End": true
+        }
+    }
+}

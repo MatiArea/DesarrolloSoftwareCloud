@@ -1,0 +1,39 @@
+{
+    "name": "aws-services-integration",
+    "version": "1.0.0",
+    "description": "Ejemplo completo de integración de servicios AWS: S3, Lambda, SQS, Step Functions, SNS, DynamoDB y RDS",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "test": "node src/test-integration.js",
+        "setup": "node src/setup-services.js"
+    },
+    "dependencies": {
+        "@aws-sdk/client-s3": "^3.500.0",
+        "@aws-sdk/client-lambda": "^3.500.0",
+        "@aws-sdk/client-sqs": "^3.500.0",
+        "@aws-sdk/client-sns": "^3.500.0",
+        "@aws-sdk/client-sfn": "^3.500.0",
+        "@aws-sdk/client-dynamodb": "^3.500.0",
+        "@aws-sdk/client-rds": "^3.500.0",
+        "@aws-sdk/lib-dynamodb": "^3.500.0",
+        "mysql2": "^3.6.0",
+        "dotenv": "^16.4.0",
+        "uuid": "^9.0.0",
+        "inquirer": "^9.2.0"
+    },
+    "keywords": [
+        "aws",
+        "integration",
+        "s3",
+        "lambda",
+        "sqs",
+        "step-functions",
+        "sns",
+        "dynamodb",
+        "rds"
+    ],
+    "author": "AWS Integration Example",
+    "license": "MIT"
+}
